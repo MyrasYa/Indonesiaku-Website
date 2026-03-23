@@ -4,6 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  /* border: 2px solid red; */
 }
 
 .row {
@@ -120,7 +123,7 @@
 }
 
 .header .box-header .box:nth-child(1) h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   color: #1f2937;
   line-height: 1.2;
 }
@@ -130,7 +133,7 @@
   line-height: 1.8;
   margin-top: 18px;
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 15.5px;
 }
 
 .header .box-header .box:nth-child(1) button {
@@ -175,14 +178,14 @@
 
 .about-section {
   width: 94%;
-  min-height: 40vh;
+  min-height: 20vh;
   padding: 40px 30px 15px 30px;
   margin: 50px 40px 20px 40px;
   /* border: 2px solid red; */
 }
 
 .about-section .container-about-header {
-  max-width: 80%;
+  max-width: 100%;
   margin-inline: auto;
   /* border: 2px solid red; */
 }
@@ -191,8 +194,9 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  margin: 0 40px;
-  min-width: 350px;
+  margin: 0 30px;
+  min-width: 300px;
+  padding-left: 10px;
   /* border: 2px solid red; */
 }
 
@@ -213,7 +217,7 @@
   line-height: 1.8;
   margin-top: 18px;
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 15.5px;
   /* text-indent: 30px; */
   text-align: justify;
   /* border: 2px solid red; */
@@ -248,7 +252,7 @@
 
 .about-section .statistic-wrapper .box-statistics {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.053);
-  padding: 30px 30px;
+  padding: 30px 35px;
   border: 0.5px solid #ababab37;
   border-radius: 10px;
   transition:
@@ -267,13 +271,13 @@
 }
 
 .about-section .statistic-wrapper .box-statistics h2 {
-  font-size: 32px;
+  font-size: 24px;
   color: #ff4242;
 }
 
 .about-section .statistic-wrapper .box-statistics p:last-of-type {
   color: #485563;
-  font-size: clamp(0.5rem, 4vw, 1rem);
+  font-size: clamp(.6rem, 4vw, .8rem);
   margin-top: 3px;
 }
 
@@ -284,13 +288,166 @@
 }
 
 /* --- PRICING SECTION --- */
+.pricing-section {
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.pricing-header {
+  width: 100%;
+  min-height: 26vh;
+  padding-top: 70px;
+  padding-bottom: clamp(20px, 10vw, 40px);
+  /* border: 2px solid red; */
+}
+
+.container-pricing-header {
+  text-align: center;
+}
+
+.container-pricing-header h2 {
+  font-size: clamp(1.4rem, 4vw, 2.25rem);
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+  font-weight: medium;
+  /* border: 2px solid red; */
+}
+
+.container-pricing-header p {
+  font-size: clamp(.5rem, 3vw, 1.125rem);
+  color: #4b5563bd;
+  margin-bottom: 20px;
+  /* border: 2px solid red; */
+}
+
+
+.pricing-packet {
+  width: 100%;
+  min-height: auto;
+}
+  
+.pricing-packet-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin: 0 60px 40px 60px;
+}
+
+.pricing-packet-card {
+  /* background-color: rgba(113, 107, 107, 0.02); */
+  border: 1.2px solid #83818137;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 25px 55px 30px 25px;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+.pricing-packet-card p, .pricing-packet-card .packet-info, .pricing-packet-card button {
+  margin-bottom: 1.3rem;
+}
+
+.pricing-b {
+  position: relative;
+  border: 0.5px solid #ff4242a8;
+}
+
+.different-packet {
+  position: absolute;
+  top: -15px;
+  left: 100px;
+  background-color: #DC2626;
+  color: white;
+  border: 1.4px solid #DC2626;
+  padding: 2px 10px;
+  border-radius: 100px;
+  font-size: 1em;
+}
+
+.pricing-packet-card h3 {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.pricing-packet-card p {
+  color: #303841;
+  font-size: .8rem;
+  margin-top: 5px;
+  max-width: 250px;
+}
+
+.pricing-packet-card h1 {
+  color: #000000;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pricing-packet-card h1 span {
+  color: #00000092;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.packet-info {
+  color: #4B5563;
+  background-color: rgba(0, 0, 0, 0.0006);
+  border: 0.3px solid #DC2626;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: .7rem;
+}
+
+.packet-info ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.packet-info ul li svg {
+  color: #DC2626;
+  width: 20px;
+  height: 20px;
+}
+
+
+.pricing-packet-card button {
+  padding: 12px 32px;
+  /* background-color: rgb(255, 101, 101); */
+  color: black;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.pricing-b-btn {
+  color: white !important;
+  background-color: #DC2626;
+  border: 1px solid #DC2626;
+}
+
+.pricing-b-btn:hover {
+  background-color: white;
+  color: #dc2626 !important;
+  border: 1px solid #dc2626;
+}
+
+.pricing-packet-card button:hover {
+  background-color: white;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
 /* --- CONTACT SECTION --- */
 
 /* --- MEDIA QUERIES --- */
 @media (max-width: 1025px) {
   .about-section .about-wrapper {
     flex-direction: column;
-    margin: 0 30px;
+    margin: 0 40px 0 0;
   }
 
   .about-section .about-wrapper .container-about-header {
@@ -301,14 +458,14 @@
     text-align: justify;
     /* border: 2px solid red; */
   }
-  
+
   .about-section .about-image img {
     max-width: 100%;
   }
 
   .about-section .statistic-wrapper {
     flex-direction: column;
-    margin: 30px 20px 0 20px;
+    margin: 30px 40px 0 20px;
   }
 
   .about-section .statistic-wrapper .box-statistics {
@@ -316,10 +473,11 @@
   }
 
   .about-section .container-about-header h2 {
-  font-size: clamp(2.3rem, 4vw, 2.3rem);
-  color: #1f2937;
-  /* border: 2px solid red; */
-}
+    font-size: clamp(2.3rem, 4vw, 2.3rem);
+    color: #1f2937;
+    text-decoration: underline;
+    /* border: 2px solid red; */
+  }
 
   .container {
     border-radius: 50px;
@@ -343,26 +501,38 @@
     max-width: 95%;
     margin: auto;
   }
+
+  
 }
 
 @media (max-width: 600px) {
   .container {
     margin-inline: 1rem;
-    padding-inline: 0.7rem;
+    padding-inline: 1rem;
   }
-
+  
   .about-section {
-    margin: 60px 20px;
-    padding: 30px 15px;
-    /* border: 2px solid red; */
+    margin: 20px 5px;
+    padding: 30px 0px;
   }
-
+  
   .about-section .about-wrapper {
     gap: 30px;
     margin: 0 20px;
+    /* border: 2px solid red; */
   }
 
   .about-section .about-image img {
     width: 700px;
+  }
+
+  .about-section .about-wrapper h2 {
+    text-decoration: underline;
+  }
+
+   .about-section .statistic-wrapper {
+    flex-direction: column;
+    margin: 30px 20px 0 30px;
+    /* border: 2px solid red; */
   }
 }

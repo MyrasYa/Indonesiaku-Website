@@ -11,6 +11,7 @@ function statAnimate(element, target, suffix = "") {
       : Math.round(eased * target);
 
     element.textContent = current + suffix;
+    element.style.opacity = eased; 
     if (elapsed < 1) requestAnimationFrame(tick);
   };
 
@@ -25,12 +26,10 @@ new IntersectionObserver(
     if (entry.isIntersecting && !countersRun) {
       countersRun = true;
       const cards = document.querySelectorAll(".stat-num");
-      /* Data: [value, suffix, isOrdinal] */
-      // const data = [null, null, 270, 6]; /* We animate the numeric ones */
-      cards.forEach((card, i) => {
-        if (i === 0) statAnimate(card, 17000, "+");
-        if (i === 1) statAnimate(card, 300, "+");
-        if (i === 2) statAnimate(card, 270, "Juta");
+      cards.forEach((card, index) => {
+        if (index === 0) statAnimate(card, 17000, "+");
+        if (index === 1) statAnimate(card, 300, "+");
+        if (index === 2) statAnimate(card, 270, "Juta");
       });
     }
   },
