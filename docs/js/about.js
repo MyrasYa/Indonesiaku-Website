@@ -1,5 +1,5 @@
 function statAnimate(element, target, suffix = "") {
-  const duration = 1450;
+  const duration = 1500;
   const start = performance.now();
   const isFloat = target % 1 !== 0;
 
