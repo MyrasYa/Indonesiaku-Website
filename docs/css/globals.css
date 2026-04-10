@@ -478,8 +478,8 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 25px;
-  margin: 0 auto;
+  margin: 0 40px;
+  margin-bottom: 40px;
   /* border: 1px solid red; */
 }
 
@@ -576,7 +576,7 @@
 .form-group textarea {
   width: 100%;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   resize: none;
 }
 
@@ -615,6 +615,13 @@
   background-color: #dc2626;
   font-weight: 600;
   color: #fff;
+  transition: 0.1s;
+}
+
+.contact-section .right button:hover {
+  background-color: white;
+  color: #dc2626;
+  border: 1px solid #dc2626;
 }
 
 .contact-section .right button svg {
@@ -707,7 +714,11 @@
   .contact-info-wrapper {
     flex-direction: column;
     gap: 0px;
-    margin: 10px 10px;
+    margin: 10px 10px 50px 10px;
+  }
+
+  .left {
+    padding-bottom: 50px;
   }
 }
 
